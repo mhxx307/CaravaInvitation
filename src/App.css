@@ -1,0 +1,44 @@
+.app {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app-container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 30px;
+  min-height: calc(100vh - 40px);
+}
+
+.form-section {
+  flex: 0 0 400px;
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.preview-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+@media (max-width: 1024px) {
+  .app-container {
+    flex-direction: column;
+  }
+  
+  .form-section {
+    flex: none;
+    width: 100%;
+  }
+  
+  .preview-section {
+    flex: none;
+  }
+}
